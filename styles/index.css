@@ -180,6 +180,9 @@
     margin: 90px 15px 20px;
     display: flex;
 }
+.left-sidenav{
+    width: 25%;
+}
 .left-sidenav__item{
     display: flex;
     align-items: center;
@@ -235,4 +238,13 @@
  }
  .left-sidenav__item-icon--circle-white .fa, .left-sidenav__item--circle-white .fab{
     color: var(--fb-whitebg);
+ }
+
+
+ .left-sidenav__line{
+     height: 3px;
+     background: var(--button-link);
+     margin-bottom: 15px;
+     display: block;
+
  }
