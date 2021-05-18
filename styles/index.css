@@ -203,3 +203,36 @@
     font-size: 25px;
     margin-right: 20px;
 }
+.left-sidenav__item-notification{
+    color: var(--fb-blue);
+    margin-top: 5px;
+    font-size: .75rem;
+    display: block;
+    font-weight: 300;
+}
+.left-sidenav__item-notification-circle{
+    background: var(--fb-blue);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-right: 4px;
+    display: inline-block;
+}
+.left-sidenav__item-icon--circle{
+    background: var(--button-link);
+    border-radius: 50%;
+    font-size: .9rem;
+}
+.left-sidenav__item-icon--circle-white{
+    background: var(--fb-blue);
+    border-radius: 50%;
+}
+.left-sidenav__item-icon .fa, .left-sidenav__item .fab{
+   color: var(--fb-blue);
+}
+.left-sidenav__item-icon--circle .fa, .left-sidenav__item--circle .fab{
+    color: var(--fb-black);
+ }
+ .left-sidenav__item-icon--circle-white .fa, .left-sidenav__item--circle-white .fab{
+    color: var(--fb-whitebg);
+ }
