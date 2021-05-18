@@ -194,3 +194,12 @@
 .left-sidenav__item-title{
     font-weight: 400;
 }
+.left-sidenav__item-icon{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-right: 20px;
+}
