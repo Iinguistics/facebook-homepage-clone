@@ -20,6 +20,7 @@
     --light-color-text: #606770;
     --button-link: #e0e2e8;
     --stories-bg: #090909;
+    --icon-circle-bg: #393939;
   }
 
 
@@ -193,6 +194,8 @@
     height: 40px;
     width: 40px;
     margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
 }
 .left-sidenav__item-title{
     font-weight: 400;
@@ -227,8 +230,10 @@
     font-size: .9rem;
 }
 .left-sidenav__item-icon--circle-white{
-    background: var(--fb-blue);
+    background: var(--icon-circle-bg);
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 .left-sidenav__item-icon .fa, .left-sidenav__item .fab{
    color: var(--fb-blue);
@@ -247,4 +252,10 @@
      margin-bottom: 15px;
      display: block;
 
+ }
+ .left-sidenav__heading-title{
+    display: block;
+    margin-bottom: 15px;
+    color: var(--light-color-text);
+    font-size: 1.1rem;
  }
