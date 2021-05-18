@@ -29,7 +29,7 @@
       color: var(--fb-black);
   }
 
-
+/* header start */
   header{
       background: var(--fb-whitebg);
       height: 62px;
@@ -171,3 +171,26 @@
     right: -7px;
 }
 
+/* header end */
+
+
+
+/* content area begin */
+.content-area--feed{
+    margin: 90px 15px 20px;
+    display: flex;
+}
+.left-sidenav__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.left-sidenav__item-img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+}
+.left-sidenav__item-title{
+    font-weight: 400;
+}
