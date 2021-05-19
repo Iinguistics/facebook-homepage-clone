@@ -349,3 +349,38 @@
      object-position: center;
      object-fit: cover;
  }
+
+
+.feed__box{
+    padding: 20px;
+    background: var(--fb-whitebg);
+    max-width: 700px;
+    width: 100%;
+    flex: none;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,.25);
+    margin-bottom: 20px;
+}
+.newpost{
+    display: flex;
+    margin-bottom: 10px;
+}
+.newpost__user-img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+.newpost input{
+    background: var(--fb-bgcolor);
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--light-color-text);
+    padding-left: 20px;
+    font-weight: 300;
+    width: 100%;
+}
