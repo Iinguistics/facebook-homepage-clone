@@ -326,3 +326,26 @@
      top: -20px;
      left: 40px;
  }
+
+
+ .stories__username{
+    position: absolute;
+    bottom: 0;
+    background: transparent;
+    width: 100%;
+    color: var(--fb-white);
+    padding: 20px 20px 10px;
+    text-align: center;
+    line-height: 1.4;
+ }
+ .stories__userimg{
+     height: 40px;
+     width: 40px;
+     border-radius: 50%;
+     position: absolute;
+     top: 5px;
+     border: 3px solid var(--fb-blue);
+     margin-left: 3px;
+     object-position: center;
+     object-fit: cover;
+ }
