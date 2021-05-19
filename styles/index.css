@@ -294,7 +294,7 @@
  .stories__bg{
      width: 125px;
      height: 200px;
-     opacity: .6;
+     opacity: .3;
      transition: opacity.3s ease-in-out;
      object-fit: cover;
      object-position: center;
