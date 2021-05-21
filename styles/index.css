@@ -144,6 +144,8 @@
     width: 40px;
     border-radius: 50%;
     margin-right: 10px;
+    object-fit: cover;
+    object-position: center;
 }
 .header__user-name{
     font-size: .9rem;
@@ -403,6 +405,9 @@
     align-items: center;
     width: 100%;
 }
+.post-types__item{
+    cursor: pointer;
+}
 
 .post-types__item i{
     font-size: 1.5rem;
@@ -417,4 +422,23 @@
 }
 .post-types__item .fa-laugh-beam{
     color: var(--fb-yellow);
+}
+
+.photopost{
+    padding: 0;
+}
+.photopost__info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 0;
+}
+.photopost__user-img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    object-fit: cover;
+    object-position: center;
 }
