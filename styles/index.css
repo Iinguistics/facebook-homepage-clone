@@ -482,3 +482,39 @@
     font-weight: 300;
     font-size: .9rem;
 }
+.photopost__stats-emojis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emoji-circle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    font-size: .6rem;
+    border: 2px solid white;
+}
+.emoji-circle:nth-child(1){
+    z-index: 3;
+}
+.emoji-circle:nth-child(1){
+    z-index: 2;
+}
+.emoji-circle:nth-child(1){
+    z-index: 1;
+}
+.emoji-circle--blue{
+    background: linear-gradient(90deg, rgba(5,61,108,1) 0%, rgba(10,134,240,1) 35%);
+}
+.emoji-circle--red{
+    background: linear-gradient(90deg, rgba(121,20,35,1) 0%, rgba(238,35,64,1) 35%);
+}
+.emoji-circle--yellow{
+    background: linear-gradient(90deg, rgba(133,95,21,1) 0%, rgba(246,176,35,1) 35%);
+}
