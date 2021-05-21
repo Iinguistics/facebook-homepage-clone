@@ -503,10 +503,12 @@
 .emoji-circle:nth-child(1){
     z-index: 3;
 }
-.emoji-circle:nth-child(1){
+.emoji-circle:nth-child(2){
+    left: -5px;
     z-index: 2;
 }
-.emoji-circle:nth-child(1){
+.emoji-circle:nth-child(3){
+    left: -10px;
     z-index: 1;
 }
 .emoji-circle--blue{
@@ -516,5 +518,16 @@
     background: linear-gradient(90deg, rgba(121,20,35,1) 0%, rgba(238,35,64,1) 35%);
 }
 .emoji-circle--yellow{
-    background: linear-gradient(90deg, rgba(133,95,21,1) 0%, rgba(246,176,35,1) 35%);
+    background: #000;
+    overflow: hidden;
+}
+.emoji-circle--blue .fa-thumbs-up{
+    position: relative;
+    top: -1px;
+}
+.emoji-circle--yellow .fa-surprise{
+    position: relative;
+    top: -1px;
+    color:rgba(246,176,35,1);
+    font-size: 1.3rem;
 }
