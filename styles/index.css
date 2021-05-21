@@ -531,3 +531,20 @@
     color:rgba(246,176,35,1);
     font-size: 1.3rem;
 }
+
+.photopost__actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.photopost__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-color-text);
+    width: 100%;
+}
+.photopost__link .fa{
+    margin-right: 10px;
+}
