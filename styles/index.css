@@ -441,9 +441,23 @@
 }
 .photopost__user-img{
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     margin-right: 10px;
     object-fit: cover;
     object-position: center;
+}
+.photopost__details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.photopost__name{
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: .9rem;
+}
+.photopost__date{
+    font-size: .7rem;
+    color: var(--light-color-text);
 }
