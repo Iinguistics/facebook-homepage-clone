@@ -432,7 +432,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 0;
+    padding: 20px 20px 20px;
 }
 .photopost__left{
     display: flex;
@@ -443,7 +443,7 @@
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    margin-right: 10px;
+    margin: 10px 10px 10px 0px;
     object-fit: cover;
     object-position: center;
 }
@@ -460,4 +460,14 @@
 .photopost__date{
     font-size: .7rem;
     color: var(--light-color-text);
+}
+.photopost__info .fa-ellipsis-h{
+    color: var(--light-color-text);
+}
+.photopost__description{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.photopost__img img{
+    width: 100%;
 }
