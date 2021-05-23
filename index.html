@@ -1,294 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook Clone</title>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
     <header class="header">
-        <div class="header__logo-section">
-            <div class="header__logo-icon">
-                <i class="fab fa-facebook"></i>
-            </div>
-            <div class="header__logo-search">
-                <i class="fas fa-search"></i>
-                <input type="text" />
-            </div>
+      <div class="header__logo-section">
+        <div class="header__logo-icon">
+          <i class="fab fa-facebook"></i>
         </div>
-
-        <div class="header__menu-tabs">
-            <div class="header__menu-tab header__menu-tab--active">
-               <i class="fa fa-home"></i>
-            </div> 
-            <div class="header__menu-tab ">
-                <i class="fa fa-flag">
-                    <div class="header__notification-bubble">
-                        4
-                    </div>
-                </i>
-             </div> 
-             <div class="header__menu-tab ">
-                <i class="fa fa-tv">
-                    <div class="header__notification-bubble">
-                        7
-                    </div>
-                </i>
-             </div> 
-             <div class="header__menu-tab ">
-                <i class="fa fa-store"></i>
-             </div> 
-             <div class="header__menu-tab ">
-                <i class="fa fa-users"></i>
-             </div> 
+        <div class="header__logo-search">
+          <i class="fas fa-search"></i>
+          <input type="text" />
         </div>
+      </div>
 
-        <div class="header__account">
-            <div class="header__actions">
-                <img class="header__user-img" src="http://images2.fanpop.com/images/photos/4400000/Emily-emily-browning-4468307-269-400.jpg" />
-                <span class="header__user-name">Emily Browning</span>
-                <a href="#" class="header__circle-link">
-                    <i class="header__link-icon fa fa-plus"></i>
-                </a>
-                <a href="#" class="header__circle-link">
-                    <i class="header__link-icon fab fa-facebook-messenger">
-                        <div class="header__notification-bubble">
-                            9
-                        </div>
-                    </i>
-                </a>
-                <a href="#" class="header__circle-link">
-                    <i class="header__link-icon fa fa-bell">
-                        <div class="header__notification-bubble">
-                            2
-                        </div>
-                    </i>
-                </a>
-                <a href="#" class="header__circle-link">
-                    <i class="header__link-icon fa fa-sort-down"></i>
-                </a>
-            </div>
+      <div class="header__menu-tabs">
+        <div class="header__menu-tab header__menu-tab--active">
+          <i class="fa fa-home"></i>
         </div>
+        <div class="header__menu-tab">
+          <i class="fa fa-flag">
+            <div class="header__notification-bubble">4</div>
+          </i>
+        </div>
+        <div class="header__menu-tab">
+          <i class="fa fa-tv">
+            <div class="header__notification-bubble">7</div>
+          </i>
+        </div>
+        <div class="header__menu-tab">
+          <i class="fa fa-store"></i>
+        </div>
+        <div class="header__menu-tab">
+          <i class="fa fa-users"></i>
+        </div>
+      </div>
 
-
+      <div class="header__account">
+        <div class="header__actions">
+          <img
+            class="header__user-img"
+            src="http://images2.fanpop.com/images/photos/4400000/Emily-emily-browning-4468307-269-400.jpg"
+          />
+          <span class="header__user-name">Emily Browning</span>
+          <a href="#" class="header__circle-link">
+            <i class="header__link-icon fa fa-plus"></i>
+          </a>
+          <a href="#" class="header__circle-link">
+            <i class="header__link-icon fab fa-facebook-messenger">
+              <div class="header__notification-bubble">9</div>
+            </i>
+          </a>
+          <a href="#" class="header__circle-link">
+            <i class="header__link-icon fa fa-bell">
+              <div class="header__notification-bubble">2</div>
+            </i>
+          </a>
+          <a href="#" class="header__circle-link">
+            <i class="header__link-icon fa fa-sort-down"></i>
+          </a>
+        </div>
+      </div>
     </header>
 
     <section class="content-area content-area--feed">
-        <section class="left-sidenav">
-            <div class="left-sidenav__item">
-                <img class="left-sidenav__item-img" src="http://images2.fanpop.com/images/photos/4400000/Emily-emily-browning-4468307-269-400.jpg" />
-                <span class="left-sidenav__item-title">
-                    Emily Browning
-                </span>
-            </div>
-            <div class="left-sidenav__item">
-                <div class="left-sidenav__item-icon">
-                    <i class="fa fa-user-friends"></i>
-                </div>
-                <span class="left-sidenav__item-title">
-                    Friends
-                </span>
-            </div>
-            <div class="left-sidenav__item">
-                <div class="left-sidenav__item-icon">
-                    <i class="fa fa-flag"></i>
-                </div>
-                <span class="left-sidenav__item-title">
-                    Pages
-                    <span class="left-sidenav__item-notification">
-                        <div class="left-sidenav__item-notification-circle"></div>
-                        9+ New
-                    </span>
-                </span>
-            </div>
-            <div class="left-sidenav__item">
-                <div class="left-sidenav__item-icon left-sidenav__item-icon--circle-white">
-                    <i class="fa fa-users"></i>
-                </div>
-                <span class="left-sidenav__item-title">
-                    Groups
-                    <span class="left-sidenav__item-notification">
-                        <div class="left-sidenav__item-notification-circle"></div>
-                        3 New
-                    </span>
-                </span>
-            </div>
-            <div class="left-sidenav__item">
-                <div class="left-sidenav__item-icon">
-                    <i class="fa fa-store"></i>
-                </div>
-                <span class="left-sidenav__item-title">
-                    Market Place
-                </span>
-            </div>
-            <div class="left-sidenav__item">
-                <div class="left-sidenav__item-icon left-sidenav__item-icon--circle">
-                    <i class="fa fa-chevron-down"></i>
-                </div>
-                <span class="left-sidenav__item-title">
-                    See More
-                </span>
-            </div>
-            <div class="left-sidenav__item">
-            </div>
-            <div class="left-sidenav__line"></div>
-
-            <span class="left-sidenav__heading-title">
-                Your Shortcuts
+      <section class="left-sidenav">
+        <div class="left-sidenav__item">
+          <img
+            class="left-sidenav__item-img"
+            src="http://images2.fanpop.com/images/photos/4400000/Emily-emily-browning-4468307-269-400.jpg"
+          />
+          <span class="left-sidenav__item-title"> Emily Browning </span>
+        </div>
+        <div class="left-sidenav__item">
+          <div class="left-sidenav__item-icon">
+            <i class="fa fa-user-friends"></i>
+          </div>
+          <span class="left-sidenav__item-title"> Friends </span>
+        </div>
+        <div class="left-sidenav__item">
+          <div class="left-sidenav__item-icon">
+            <i class="fa fa-flag"></i>
+          </div>
+          <span class="left-sidenav__item-title">
+            Pages
+            <span class="left-sidenav__item-notification">
+              <div class="left-sidenav__item-notification-circle"></div>
+              9+ New
             </span>
+          </span>
+        </div>
+        <div class="left-sidenav__item">
+          <div
+            class="
+              left-sidenav__item-icon left-sidenav__item-icon--circle-white
+            "
+          >
+            <i class="fa fa-users"></i>
+          </div>
+          <span class="left-sidenav__item-title">
+            Groups
+            <span class="left-sidenav__item-notification">
+              <div class="left-sidenav__item-notification-circle"></div>
+              3 New
+            </span>
+          </span>
+        </div>
+        <div class="left-sidenav__item">
+          <div class="left-sidenav__item-icon">
+            <i class="fa fa-store"></i>
+          </div>
+          <span class="left-sidenav__item-title"> Market Place </span>
+        </div>
+        <div class="left-sidenav__item">
+          <div class="left-sidenav__item-icon left-sidenav__item-icon--circle">
+            <i class="fa fa-chevron-down"></i>
+          </div>
+          <span class="left-sidenav__item-title"> See More </span>
+        </div>
+        <div class="left-sidenav__item"></div>
+        <div class="left-sidenav__line"></div>
 
-            <div class="left-sidenav__item">
-                <div class="left-sidenav__item-icon left-sidenav__item-icon--circle-white">
-                    <i class="fa fa-user-friends"></i>
-                </div>
-                <span class="left-sidenav__item-title">
-                    Emily's Groups
-                </span>
+        <span class="left-sidenav__heading-title"> Your Shortcuts </span>
+
+        <div class="left-sidenav__item">
+          <div
+            class="
+              left-sidenav__item-icon left-sidenav__item-icon--circle-white
+            "
+          >
+            <i class="fa fa-user-friends"></i>
+          </div>
+          <span class="left-sidenav__item-title"> Emily's Groups </span>
+        </div>
+        <div class="left-sidenav__item">
+          <img
+            class="left-sidenav__item-img"
+            src="https://blogv2new.clickfunnels.com/wp-content/uploads/2016/03/CFLogo-SocialProfiles600x600.png"
+          />
+          <span class="left-sidenav__item-title"> Click Funnels </span>
+        </div>
+        <div class="left-sidenav__item">
+          <img
+            class="left-sidenav__item-img"
+            src="https://aatfweb.files.wordpress.com/2017/06/film.jpg"
+          />
+          <span class="left-sidenav__item-title"> Film Arts </span>
+        </div>
+        <div class="left-sidenav__item">
+          <img
+            class="left-sidenav__item-img"
+            src="https://hellofunnels.co/wp-content/uploads/2016/04/bloggers-mastermind-group-th.jpg"
+          />
+          <span class="left-sidenav__item-title"> Bloggers Mastermind </span>
+        </div>
+      </section>
+
+      <section class="feed">
+        <div class="stories">
+          <div class="stories__video-container">
+            <img
+              class="stories__bg"
+              src="http://images2.fanpop.com/images/photos/4400000/Emily-emily-browning-4468307-269-400.jpg"
+            />
+            <div class="stories__title">
+              <div class="stories__new-btn">
+                <i class="fa fa-plus"></i>
+              </div>
+              Create a Story
             </div>
-            <div class="left-sidenav__item">
-                <img class="left-sidenav__item-img" src="https://blogv2new.clickfunnels.com/wp-content/uploads/2016/03/CFLogo-SocialProfiles600x600.png" />
-                <span class="left-sidenav__item-title">
-                    Click Funnels
-                </span>
+          </div>
+
+          <div class="stories__video-container stories__video-container--plain">
+            <img
+              class="stories__bg"
+              src="https://img.cinemablend.com/cb/6/3/c/1/7/f/63c17f40af1efe8da114b80a44c024df9cc39a403c951aa06e082586d39a359a.jpg"
+            />
+            <div class="stories__username">Samira Lister</div>
+            <img
+              class="stories__userimg"
+              src="https://www.colorado.edu/cmci/sites/default/files/styles/medium/public/people/samira_rajabi_0.jpg?itok=6hcEb23T"
+            />
+          </div>
+
+          <div class="stories__video-container stories__video-container--plain">
+            <img
+              class="stories__bg"
+              src="https://i1.wp.com/x-menfilms.com/wp-content/uploads/2020/06/yet.jpg?fit=1018%2C640&ssl=1"
+            />
+            <div class="stories__username">Yetide Badaki</div>
+            <img
+              class="stories__userimg"
+              src="https://m.media-amazon.com/images/M/MV5BZTg1Y2YwZjgtNjJkMS00MjFiLThiYWQtNWQ1MDZiOTlkYzMyXkEyXkFqcGdeQXVyMjgxNzk4NA@@._V1_.jpg"
+            />
+          </div>
+
+          <div class="stories__video-container stories__video-container--plain">
+            <img
+              class="stories__bg"
+              src="https://pbs.twimg.com/media/EKPUBksU0AAGj72.jpg"
+            />
+            <div class="stories__username">Bruce Langley</div>
+            <img
+              class="stories__userimg"
+              src="https://www.syfy.com/sites/syfy/files/styles/1400xauto/public/wire/legacy/bruce_langley_technical_boy_-_american_gods.jpg"
+            />
+          </div>
+
+          <div class="stories__video-container stories__video-container--plain">
+            <img
+              class="stories__bg"
+              src="https://www.marieclaire.com.au/media/64466/201018_chanel_mariechlair81463-3.jpg?width=720&center=0.0,0.0"
+            />
+            <div class="stories__username">Natasha Liu Bordizzo</div>
+            <img
+              class="stories__userimg"
+              src="https://i.redd.it/44xrfg5t2nu51.jpg"
+            />
+          </div>
+
+          <div class="stories__video-container stories__video-container--plain">
+            <img
+              class="stories__bg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHEnH-rQ9anjtE4vS34swf3ci0ysyiv02wBg&usqp=CAU"
+            />
+            <div class="stories__username">Pablo Schreiber</div>
+            <img
+              class="stories__userimg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAIJuWOZzJEt3OWAiplWRt7ZeF2obZPbLv6g&usqp=CAU"
+            />
+          </div>
+        </div>
+        <div class="feed__box submitpost">
+          <div class="newpost">
+            <img
+              class="newpost__user-img"
+              src="http://images2.fanpop.com/images/photos/4400000/Emily-emily-browning-4468307-269-400.jpg"
+            />
+            <input type="text" placeholder="What's on your mind, Emily?" />
+          </div>
+          <div class="hline"></div>
+          <div class="post-types">
+            <div class="post-types__item">
+              <i class="fa fa-video"></i> Live Video
             </div>
-            <div class="left-sidenav__item">
-                <img class="left-sidenav__item-img" src="https://aatfweb.files.wordpress.com/2017/06/film.jpg" />
-                <span class="left-sidenav__item-title">
-                    Film Arts
-                </span>
+            <div class="post-types__item">
+              <i class="fa fa-photo-video"></i> Photo/Video
             </div>
-            <div class="left-sidenav__item">
-                <img class="left-sidenav__item-img" src="https://hellofunnels.co/wp-content/uploads/2016/04/bloggers-mastermind-group-th.jpg" />
-                <span class="left-sidenav__item-title">
-                    Bloggers Mastermind
-                </span>
+            <div class="post-types__item">
+              <i class="fa fa-laugh-beam"></i> Feeling/Activity
             </div>
-        </section>
-
-        <section class="feed">
-            <div class="stories">
-                <div class="stories__video-container">
-                    <img class="stories__bg" src="http://images2.fanpop.com/images/photos/4400000/Emily-emily-browning-4468307-269-400.jpg" />
-                    <div class="stories__title">
-                        <div class="stories__new-btn">
-                            <i class="fa fa-plus"></i>
-                        </div>
-                        Create a Story
-                    </div>
-                </div>
-
-                <div class="stories__video-container stories__video-container--plain">
-                    <img class="stories__bg" src="https://img.cinemablend.com/cb/6/3/c/1/7/f/63c17f40af1efe8da114b80a44c024df9cc39a403c951aa06e082586d39a359a.jpg" />
-                    <div class="stories__username">
-                        Samira Lister
-                    </div>
-                    <img class="stories__userimg" src="https://www.colorado.edu/cmci/sites/default/files/styles/medium/public/people/samira_rajabi_0.jpg?itok=6hcEb23T" />
-                </div>
-
-                <div class="stories__video-container stories__video-container--plain">
-                    <img class="stories__bg" src="https://i1.wp.com/x-menfilms.com/wp-content/uploads/2020/06/yet.jpg?fit=1018%2C640&ssl=1" />
-                    <div class="stories__username">
-                        Yetide Badaki
-                    </div>
-                    <img class="stories__userimg" src="https://m.media-amazon.com/images/M/MV5BZTg1Y2YwZjgtNjJkMS00MjFiLThiYWQtNWQ1MDZiOTlkYzMyXkEyXkFqcGdeQXVyMjgxNzk4NA@@._V1_.jpg" />
-                </div>
-
-                <div class="stories__video-container stories__video-container--plain">
-                    <img class="stories__bg" src="https://pbs.twimg.com/media/EKPUBksU0AAGj72.jpg" />
-                    <div class="stories__username">
-                        Bruce Langley
-                    </div>
-                    <img class="stories__userimg" src="https://www.syfy.com/sites/syfy/files/styles/1400xauto/public/wire/legacy/bruce_langley_technical_boy_-_american_gods.jpg" />
-                </div>
-
-                <div class="stories__video-container stories__video-container--plain">
-                    <img class="stories__bg" src="https://www.marieclaire.com.au/media/64466/201018_chanel_mariechlair81463-3.jpg?width=720&center=0.0,0.0" />
-                    <div class="stories__username">
-                        Natasha Liu Bordizzo
-                    </div>
-                    <img class="stories__userimg" src="https://i.redd.it/44xrfg5t2nu51.jpg" />
-                </div>
-
-                <div class="stories__video-container stories__video-container--plain">
-                    <img class="stories__bg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHEnH-rQ9anjtE4vS34swf3ci0ysyiv02wBg&usqp=CAU" />
-                    <div class="stories__username">
-                        Pablo Schreiber
-                    </div>
-                    <img class="stories__userimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAIJuWOZzJEt3OWAiplWRt7ZeF2obZPbLv6g&usqp=CAU" />
-                </div>
-
+          </div>
+        </div>
+        <div class="feed__box photopost">
+          <div class="photopost__info">
+            <div class="photopost__left">
+              <img
+                class="photopost__user-img"
+                src="https://randomuser.me/api/portraits/med/men/15.jpg"
+              />
+              <div class="photopost__details">
+                <span class="photopost__name">Charles Willow</span>
+                <span class="photopost__date"
+                  >July 4th at 8:30pm <i class="fa fa-user-friends"></i
+                ></span>
+              </div>
             </div>
-            <div class="feed__box submitpost">
-                <div class="newpost">
-                    <img class="newpost__user-img" src="http://images2.fanpop.com/images/photos/4400000/Emily-emily-browning-4468307-269-400.jpg" />
-                    <input type="text" placeholder="What's on your mind, Emily?" />
-                </div>
-                <div class="hline"></div>
-                <div class="post-types">
-                    <div class="post-types__item">
-                        <i class="fa fa-video"></i> Live Video
-                    </div>
-                    <div class="post-types__item">
-                        <i class="fa fa-photo-video"></i> Photo/Video
-                    </div>
-                    <div class="post-types__item">
-                        <i class="fa fa-laugh-beam"></i> Feeling/Activity
-                    </div>
-                </div>
+            <i class="fa fa-ellipsis-h"></i>
+          </div>
+          <div class="photopost__description">
+            Currently in SoCal celebrating independence day!!
+          </div>
+          <div class="photopost__img">
+            <img
+              src="https://losangeles.cbslocal.com/wp-content/uploads/sites/14984641/2016/06/shutterstock_506751328.jpg?w=1000"
+            />
+          </div>
+          <div class="photopost__stats">
+            <div class="photopost__stats-emojis">
+              <div class="emoji-circle emoji-circle--blue">
+                <i class="fa fa-thumbs-up"></i>
+              </div>
+              <div class="emoji-circle emoji-circle--red">
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="emoji-circle emoji-circle--yellow">
+                <i class="fa fa-surprise"></i>
+              </div>
+              4.7k
             </div>
-            <div class="feed__box photopost">
-                <div class="photopost__info">
-                    <div class="photopost__left">
-                        <img class="photopost__user-img" src="https://randomuser.me/api/portraits/med/men/15.jpg" />
-                        <div class="photopost__details">
-                            <span class="photopost__name">Charles Willow</span>
-                            <span class="photopost__date">July 4th at 8:30pm <i class="fa fa-user-friends"></i></span>
-                        </div>
-                    </div>
-                    <i class="fa fa-ellipsis-h"></i>
-                </div>
-                <div class="photopost__description">
-                    Currently in SoCal celebrating independence day!!
-                </div>
-                <div class="photopost__img">
-                    <img src="https://cdn.cnn.com/cnnnext/dam/assets/200626184431-09-july-4-weekend-safe-large-169.jpg" />
-                </div>
-                <div class="photopost__stats">
-                    <div class="photopost__stats-emojis">
-                        <div class="emoji-circle emoji-circle--blue">
-                            <i class="fa fa-thumbs-up"></i>
-                        </div>
-                        <div class="emoji-circle emoji-circle--red">
-                            <i class="fa fa-heart"></i>
-                        </div>
-                        <div class="emoji-circle emoji-circle--yellow">
-                            <i class="fa fa-surprise"></i>
-                        </div>
-                        4.7k
-                    </div>
-                    <div class="photopost__stats-share">
-                        962 Comments 283 Shares
-                    </div>
-                </div>
-                <div class="hline"></div>
-                <div class="photopost__actions">
-                    <a href="#" class="photopost__link">
-                        <i class="fa fa-thumbs-up"></i>Like
-                    </a>
-                    <a href="#" class="photopost__link">
-                        <i class="fa fa-comment"></i>Comment
-                    </a>
-                    <a href="#" class="photopost__link">
-                        <i class="fa fa-share"></i>Share
-                    </a>
-                </div>
-                <div class="hline"></div>
-            </div>    
-        </section>
+            <div class="photopost__stats-share">962 Comments 283 Shares</div>
+          </div>
+          <div class="hline"></div>
+          <div class="photopost__actions">
+            <a href="#" class="photopost__link">
+              <i class="fa fa-thumbs-up"></i>Like
+            </a>
+            <a href="#" class="photopost__link">
+              <i class="fa fa-comment"></i>Comment
+            </a>
+            <a href="#" class="photopost__link">
+              <i class="fa fa-share"></i>Share
+            </a>
+          </div>
+          <div class="hline"></div>
+        </div>
+        <div class="feed__box photopost">
+          <div class="photopost__info">
+            <div class="photopost__left">
+              <img
+                class="photopost__user-img"
+                src="https://randomuser.me/api/portraits/med/women/45.jpg"
+              />
+              <div class="photopost__details">
+                <span class="photopost__name">Ashley Bensin</span>
+                <span class="photopost__date"
+                  >July 2nd at 11:24am <i class="fa fa-user-friends"></i
+                ></span>
+              </div>
+            </div>
+            <i class="fa fa-ellipsis-h"></i>
+          </div>
+          <div class="photopost__description">
+            Picnic times are the best times.
+          </div>
+          <div class="photopost__img">
+            <img
+              src="https://i2.wp.com/www.jasminealley.com/wp-content/uploads/2018/01/picnic-instagram-photo-scaled.jpg?fit=1440%2C1800&ssl=1"
+            />
+          </div>
+          <div class="photopost__stats">
+            <div class="photopost__stats-emojis">
+              <div class="emoji-circle emoji-circle--blue">
+                <i class="fa fa-thumbs-up"></i>
+              </div>
+              <div class="emoji-circle emoji-circle--red">
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="emoji-circle emoji-circle--yellow">
+                <i class="fa fa-surprise"></i>
+              </div>
+              852
+            </div>
+            <div class="photopost__stats-share">524 Comments 108 Shares</div>
+          </div>
+          <div class="hline"></div>
+          <div class="photopost__actions">
+            <a href="#" class="photopost__link">
+              <i class="fa fa-thumbs-up"></i>Like
+            </a>
+            <a href="#" class="photopost__link">
+              <i class="fa fa-comment"></i>Comment
+            </a>
+            <a href="#" class="photopost__link">
+              <i class="fa fa-share"></i>Share
+            </a>
+          </div>
+          <div class="hline"></div>
+        </div>
+      </section>
     </section>
-</body>
+    <section class="floating-msg">
+      <div class="floating-msg__bubble">
+        <img src="https://randomuser.me/api/portraits/med/women/2.jpg" />
+        <div class="floating-msg__notification">3</div>
+      </div>
+      <div class="floating-msg__bubble">
+        <img src="https://randomuser.me/api/portraits/med/men/32.jpg" />
+        <div class="floating-msg__notification">8</div>
+      </div>
+      <div class="floating-msg__bubble">
+        <img src="https://randomuser.me/api/portraits/med/women/34.jpg" />
+        <div class="floating-msg__notification">6</div>
+      </div>
+      <div class="floating-msg__bubble">
+        <img src="https://randomuser.me/api/portraits/med/women/26.jpg" />
+        <div class="floating-msg__notification">1</div>
+      </div>
+      <div class="floating-msg__bubble">
+        <img src="https://randomuser.me/api/portraits/med/men/34.jpg" />
+        <div class="floating-msg__notification">6</div>
+      </div>
+      <div class="floating-msg__bubble">
+        <i class="fa fa-edit"></i>
+      </div>
+    </section>
+  </body>
 </html>

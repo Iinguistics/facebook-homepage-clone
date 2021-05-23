@@ -21,6 +21,7 @@
     --button-link: #e0e2e8;
     --stories-bg: #090909;
     --icon-circle-bg: #393939;
+    --shadow-color: 0px 5px 10px 0px rgba(0,0,0, 0.5);
   }
 
 
@@ -39,7 +40,7 @@
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: var(--shadow-color);
       position: fixed;
       top: 0;
       left: 0;
@@ -286,7 +287,7 @@
      border-radius: 4px;
      background: var(--stories-bg);
      position: relative;
-     box-shadow: 0px 1px 2px 0px var(--fb-black);
+     box-shadow: var(--shadow-color);
      margin-right: 10px;
      cursor: pointer;
  }
@@ -360,7 +361,7 @@
     width: 100%;
     flex: none;
     border-radius: 4px;
-    box-shadow: 0px 1px 2px 0px rgba(0,0,0,.25);
+    box-shadow: var(--shadow-color);
     margin-bottom: 20px;
 }
 .newpost{
@@ -546,5 +547,52 @@
     width: 100%;
 }
 .photopost__link .fa{
+    margin-right: 5px;
+}
+
+
+.floating-msg{
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+}
+.floating-msg__bubble{
+    position: relative;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 10px;
+    position: relative;
+    margin-bottom: 15px;
+    box-shadow: var(--shadow-color);
+    background: var(--button-link);
+    cursor: pointer;
+}
+.floating-msg__bubble img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.floating-msg__notification{
+    position:absolute;
+    top: -7px;
+    right: -5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fb-red);
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: .8rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.floating-msg__bubble:hover i{
+    color: var(--fb-blue);
+    transition: .2s;
 }
