@@ -504,8 +504,6 @@ header {
   right: 20px;
 }
 .create-room__right-arrow .fa-chevron-right {
-  position: absolute;
-  right: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -745,6 +743,12 @@ header {
   .content-area--feed {
     width: 100%;
     margin-right: 5px;
+  }
+  .create-room {
+    overflow-x: hidden;
+  }
+  .create-room__right-arrow {
+    right: 7px;
   }
 }
 
