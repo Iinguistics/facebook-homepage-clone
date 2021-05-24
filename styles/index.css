@@ -640,6 +640,7 @@ header {
     align-items: center;
     font-size: 1.7rem;
   }
+
   .header__user-img {
     display: none;
   }
@@ -667,14 +668,17 @@ header {
   .stories__video-container {
     flex: 1 0 auto;
   }
+  .content-area--feed {
+    width: 100%;
+    margin-right: 5px;
+  }
 }
 
-@media only screen and (max-width: 320px) {
-  .post-types__item i {
-    font-size: 1rem;
-    margin: 5px;
+@media only screen and (max-width: 450px) {
+  .header__account {
+    display: none;
   }
-  .post-types__item {
-    font-size: 0.9rem;
+  .post-types__title {
+    display: none;
   }
 }
