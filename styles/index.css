@@ -574,7 +574,7 @@ header {
 
 .floating-msg {
   position: fixed;
-  right: 15px;
+  right: 12px;
   bottom: 30px;
 }
 .floating-msg__bubble {
@@ -679,6 +679,9 @@ header {
     display: none;
   }
   .post-types__title {
+    display: none;
+  }
+  .floating-msg {
     display: none;
   }
 }
